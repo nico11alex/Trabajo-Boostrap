@@ -1,0 +1,29 @@
+body {
+    background-image: url('fondo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.card{
+    width: 100%;
+    border-radius: 20px;
+    overflow: visible;
+    
+}
+
+.col-md-5 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 15px 15px 0;
+    
+}
